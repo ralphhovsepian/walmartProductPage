@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Walmart Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./media/logosvg.png" alt="Walmart">
+        <form>
+                <select id="selectTag">
+                        <option value="All Departments" id="optionTag">All Departments</option>
+                      </select>
+
+                <div class="container">
+                    <a href="#">All Departments</a>
+                    <a href="#">Auto & Tire</a>
+                    <a href="#">Baby</a>
+                    <a href="#">Beauty</a>
+                    <a href="#">Books</a>
+
+                    <a href="#">Cell Phones</a>
+                    <a href="#">Clothing</a>
+                    <a href="#">Electronics</a>
+                    <a href="#">Food</a>
+                    <a href="#">Health</a>
+                </div>
+            <input type="text" id="searchBar" placeholder="Search">
+            <input type="image" id="searchBtn" src="./media/search.png">
+        </form>
+        
+    </header>
+
+
+    <div class="product">
+
+        <div id="productImage">
+            <img src="./media/dualshockBlack.png" id="dualshock" alt="Dualshock">
+            <img src="./media/dualshockSilver.png" id="dualshockSilver" alt="Dualshock">
+            <img src="./media/dualshockViolet.png" id="dualshockViolet" alt="Dualshock">
+        </div>
+        <div id="productInfo">
+            <h2>Sony Playstation 4 DualShock 4 Controller, Black</h2>
+            <span id="stars">
+                <img src="./media/star.png" alt="Star">
+                <img src="./media/star.png" alt="Star">
+                <img src="./media/star.png" alt="Star">
+                <img src="./media/star.png" alt="Star">
+                <a href="#">742 reviews</a>
+            </span>
+
+                <h3 id="price">Price: $49.99</h3>
+
+            <div id="addon">
+                <p>Add-on services</p>
+                <p>Available Options: Walmart Protection Plan and Entertainment Essentials.</p>
+            </div>
+
+            <div id="colors">
+                <span id="black"></span>
+                <span id="silver"></span>
+                <span id="violet"></span>
+            </div>
+
+            <div id="cartbuy">
+                <label for="quantity">Qty</label>
+                <select name="quantity" id="quantity" onchange="updatePrice(this.value)">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <a href="#" id="buyBtn">Buy now</a>
+            </div>
+
+            <div id="delivery">
+                <span><img src="./media/truck.png" alt="truck">Free 2-day delivery</span>
+                <br>
+            </div>
+            <div id="pickup">
+                    <span><img src="./media/warehouse.png" alt="warehouse">Free pickup today</span>
+                    <br><span>In stock at your nearest store</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="buyResult">
+        <div class="success">
+            <h1>Your order has been placed!</h1>   
+        </div>
+        <div class="decline">
+            <h1>Order has been declined. Item quantity not in stock</h1>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
