@@ -18,10 +18,12 @@ header {
     top: 0;
     position: fixed;
     background-color: $primaryBlue;
+    margin-left: -8px;
 
     img {
         width: 70px;
         height: 70px;
+        margin-left: 8px;
     }
 
     form {
@@ -75,6 +77,16 @@ header {
 
 }
 
+@media only screen and (max-width: 600px) {
+    header {
+
+    img, select {
+        display: none;
+    }
+
+    }
+}
+
 .product {
     display: flex;
     flex-wrap: wrap;
@@ -86,11 +98,14 @@ header {
         height: 250px;
         cursor: pointer;
     }
+
     
+
     #dualshockSilver, #dualshockViolet {
         display: none;
     }
 
+   
     #productInfo {
         margin-top: 100px;
         color: black;
@@ -168,7 +183,7 @@ header {
     #delivery, #pickup {
         font-size: 13px;
         border-bottom: 2px solid #ccc;
-        margin: 10px;
+        margin: 23px;
         img {
             width: 20px;
             height: 20px;

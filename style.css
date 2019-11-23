@@ -14,11 +14,13 @@ header {
   top: 0;
   position: fixed;
   background-color: #041E41;
+  margin-left: -8px;
 }
 
 header img {
   width: 70px;
   height: 70px;
+  margin-left: 8px;
 }
 
 header form {
@@ -77,6 +79,12 @@ header .container a {
 
 header .container a:hover {
   background-color: #ccc;
+}
+
+@media only screen and (max-width: 600px) {
+  header img, header select {
+    display: none;
+  }
 }
 
 .product {
@@ -183,7 +191,7 @@ header .container a:hover {
 .product #delivery, .product #pickup {
   font-size: 13px;
   border-bottom: 2px solid #ccc;
-  margin: 10px;
+  margin: 23px;
 }
 
 .product #delivery img, .product #pickup img {
