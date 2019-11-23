@@ -101,7 +101,7 @@ let buyProcess = () => {
 
 const addDate = () => {
     let today = new Date();
-    let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    let date = `${today.getFullYear()}-${(today.getMonth()+1)}-${(today.getDate() + 2)}`;
 
     let addToday = document.createElement('span');
     addToday.innerHTML = `Arrives by ${date}`;
